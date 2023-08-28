@@ -1,6 +1,7 @@
 # bonovizio
 vite
-1
+scss
+swiper
 
 yarn install
 yarn run dev 

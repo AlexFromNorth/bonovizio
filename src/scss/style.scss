@@ -4,6 +4,8 @@
 *,
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -11,6 +13,7 @@ a {
 }
 button {
   background-color: inherit;
+  border: none;
 }
 
 .header {
@@ -39,14 +42,87 @@ button {
   .media {
     margin-right: 50px;
     margin-left: auto;
-    a:nth-of-type(1){
+    a:nth-of-type(1) {
       margin-right: 13px;
     }
   }
 }
 
-main{
-  .conference{
+main {
+  .conference {
+    color: $text-white;
     background-color: $conference_background;
+    position: relative;
+    padding: 69px 220px 86px;
+
+    .logo {
+      position: absolute;
+      top: 32px;
+      right: 38px;
+    }
+    .img_text {
+      margin-left: -60px;
+      margin-bottom: 65px;
+    }
+    button {
+      color: $text-white;
+      padding: 26px 13px 25px;
+      background-color: $main_blue;
+      letter-spacing: 9.38px;
+      text-transform: uppercase;
+    }
+    p {
+      width: 40%;
+      margin-top: 41px;
+      margin-bottom: 48px;
+    }
+  }
+
+  // speaker - swiper
+  .speakers {
+    padding: 72px 125px 60px;
+
+    .swiper {
+      width: 800px;
+      height: 440px;
+      // padding-bottom: 49px;
+      
+      h3{
+        padding-left: 42px;
+        margin-bottom: 40px;
+      }
+
+      .swiper-wrapper {
+
+        .swiper-slide {
+          padding: 0 42px;
+
+          // margin: 23px 42px 49px;
+          .swiper_img {
+            background-image: url("../../../public/images/slider_img.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            height: inherit;
+
+            .wrapper {
+              background-color: $blue_apocity;
+              color: $text-white;
+              position: absolute;
+              bottom: 127px;
+              width: 100%;
+              padding: 25px 29px;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination{
+        // bottom: -49px;
+        .swiper-pagination-bullet-active{
+          background-color: black;
+        }
+      }
+    }
   }
 }
