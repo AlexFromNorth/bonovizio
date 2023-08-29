@@ -13,6 +13,9 @@ body {
   font-size: 18px;
   color: $conference_background;
 }
+html {
+  scroll-behavior: smooth;
+  }
 a {
   text-decoration: none;
   color: inherit;
@@ -58,6 +61,9 @@ button {
       margin-right: 13px;
     }
   }
+  .mobile_burger{
+    display: none;
+  }
 }
 
 main {
@@ -78,7 +84,7 @@ main {
     }
     button {
       color: $text-white;
-      padding: 26px 13px 25px;
+      padding: 26px 50px 25px;
       background-color: $main_blue;
       letter-spacing: 9.38px;
       text-transform: uppercase;
@@ -86,9 +92,10 @@ main {
       font-size: 14px;
     }
     p {
-      width: 50%;
+      width: 60%;
       margin-top: 41px;
       margin-bottom: 48px;
+      color: $text-white;
     }
     p:nth-of-type(1) {
       font-weight: 500;
@@ -102,10 +109,10 @@ main {
 
   // speaker - swiper
   .speakers {
-    padding: 72px 125px 60px;
+    padding: 72px 220px 60px;
 
     .swiper {
-      width: 100%;
+      // width: 100%;
       height: 540px;
 
       h3 {
@@ -206,7 +213,7 @@ main {
       }
       button {
         background-color: $main_blue;
-        padding: 25px 14px;
+        padding: 25px 40px;
         color: $text-white;
         letter-spacing: 9.38px;
         font-size: 14px;

@@ -1,5 +1,32 @@
 @media screen and (width < 1140px) {
-    body{
-        background-color: red;
+  header {
+    .logo {
+      border-right: none !important;
     }
+    nav,
+    .media {
+      display: none !important;
+      background-color: red;
+    }
+    .mobile_burger{
+        display: inline-block!important;
+      }
+  }
+  .speakers {
+
+    .swiper {
+        height: 445px!important;
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none !important;
+      }
+      .swiper_img {
+        width: 280px !important;
+      }
+      .wrapper{
+        top: 39%!important;
+      }
+    }
+  }
 }
