@@ -1,4 +1,5 @@
 import "../scss/style.scss";
+import "../scss/media.scss";
 
 import Swiper from "swiper/bundle";
 

@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/public/favicon/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bonovisio</title>
+    <link rel="stylesheet" href="./public/fonts/HelveticaNeueCyr-Thin.ttf" />
   </head>
   <body>
     <header class="header">
@@ -50,7 +51,21 @@
           коммуникационного холдинга WPP и представленной в России агентствами
           Mindshare, MediaCom и Wavemaker.
         </p>
-        <a href="">якорь вниз</a>
+        <a href="#" class="anchor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="87"
+            height="31"
+            viewBox="0 0 87 31"
+            fill="none"
+          >
+            <path
+              d="M0.999999 0.999999L43.5 29L86 0.999995"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
       </div>
       <div class="speakers">
         <!-- Slider main container -->
@@ -58,6 +73,7 @@
           <h3>Спикеры</h3>
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
+            <!-- <div class="padding-wrapper"> -->
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="swiper_img">
@@ -162,24 +178,88 @@
                   <p>CEO MediaCom</p>
                 </div>
               </div>
+              <!-- </div> -->
             </div>
-
-
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="87"
+              viewBox="0 0 31 87"
+              fill="none"
+            >
+              <path
+                d="M29.9275 1L2 43.5L29.9275 86"
+                stroke="#0A2756"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="87"
+              viewBox="0 0 31 87"
+              fill="none"
+            >
+              <path
+                d="M1.50259 86L29.4301 43.5L1.5026 1"
+                stroke="#0A2756"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
 
           <!-- If we need scrollbar -->
           <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
-      <div class="form"></div>
+      <div class="form">
+        <form action="#" method="post">
+          <h3>ОТПРАВИТЬ СООБЩЕНИЕ</h3>
+          <div class="nameAndEmail">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ваше имя"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="text">
+            <textarea
+              type="text"
+              name="email"
+              id="text"
+              placeholder="Ваше сообщение"
+              required
+            ></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">ОТПРАВИТЬ</button>
+          </div>
+        </form>
+
+        <footer>
+          <a href="mailto: info@groupmnextm.ru">info@groupmnextm.ru</a>
+          <a href="tel: +74956414080">+7 (495) 641-40-80</a>
+          <a href="#"><span>Правовая информация</span> </a>
+        </footer>
+      </div>
     </main>
-    <footer></footer>
 
     <script type="module" src="/src/js/main.js"></script>
   </body>

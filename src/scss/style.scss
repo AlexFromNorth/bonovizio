@@ -6,6 +6,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 18px;
+  color: $conference_background;
 }
 a {
   text-decoration: none;
@@ -20,6 +26,11 @@ button {
   display: flex;
   align-items: center;
 
+  a,
+  button {
+    font-size: 16px;
+  }
+
   .logo {
     margin: 12px 0 12px 51px;
     padding-right: 25px;
@@ -28,6 +39,7 @@ button {
     line-height: 42px;
   }
   nav {
+    margin-top: 6px;
     width: 55%;
     display: flex;
     justify-content: space-around;
@@ -70,11 +82,21 @@ main {
       background-color: $main_blue;
       letter-spacing: 9.38px;
       text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
     }
     p {
-      width: 40%;
+      width: 50%;
       margin-top: 41px;
       margin-bottom: 48px;
+    }
+    p:nth-of-type(1) {
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .anchor {
+      display: grid;
+      justify-content: center;
     }
   }
 
@@ -83,46 +105,139 @@ main {
     padding: 72px 125px 60px;
 
     .swiper {
-      width: 800px;
-      height: 440px;
-      // padding-bottom: 49px;
-      
-      h3{
-        padding-left: 42px;
+      width: 100%;
+      height: 540px;
+
+      h3 {
+        padding-left: 106px;
         margin-bottom: 40px;
+        font-size: 60px;
+        font-weight: 300;
       }
 
       .swiper-wrapper {
-
         .swiper-slide {
-          padding: 0 42px;
+          padding: 0 50px;
+          display: grid;
+          justify-content: center;
 
-          // margin: 23px 42px 49px;
           .swiper_img {
             background-image: url("../../../public/images/slider_img.jpg");
             background-repeat: no-repeat;
             background-size: contain;
             position: relative;
             height: inherit;
+            width: 378px;
 
             .wrapper {
               background-color: $blue_apocity;
-              color: $text-white;
               position: absolute;
-              bottom: 127px;
+              top: 50%;
               width: 100%;
               padding: 25px 29px;
+              p {
+                color: $text-white;
+              }
+              p:nth-of-type(1) {
+                margin-bottom: 8px;
+                font-size: 24px;
+                font-weight: 500;
+              }
             }
           }
         }
       }
 
-      .swiper-pagination{
-        // bottom: -49px;
-        .swiper-pagination-bullet-active{
+      .swiper-button-prev {
+        left: 0;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        height: 85px;
+      }
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
+        content: "";
+      }
+
+      .swiper-pagination {
+        .swiper-pagination-bullet-active {
           background-color: black;
         }
       }
+    }
+  }
+
+  // form
+  .form {
+    background-color: $conference_background;
+    padding: 140px 220px 160px;
+
+    form {
+      h3 {
+        margin-bottom: 62px;
+        color: $text-white;
+        font-size: 60px;
+        font-weight: 300;
+      }
+
+      #name,
+      #email {
+        width: 49%;
+        padding: 12px 20px;
+      }
+      #email {
+        float: right;
+      }
+      #text {
+        width: 100%;
+        padding: 12px 20px;
+        height: 120px;
+        margin-top: 26px;
+        margin-bottom: 28px;
+      }
+
+      .btn {
+        text-align: right;
+      }
+      button {
+        background-color: $main_blue;
+        padding: 25px 14px;
+        color: $text-white;
+        letter-spacing: 9.38px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+footer {
+  color: $text-white;
+  text-align: center;
+  margin-top: 100px;
+
+  a {
+    display: block;
+  }
+  a:nth-of-type(1) {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  a:nth-of-type(2) {
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  a:nth-of-type(3) {
+    span {
+      border-bottom: 1px solid $text-white;
+      color: $text-white;
     }
   }
 }
