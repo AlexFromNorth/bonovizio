@@ -20,8 +20,16 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 2,
+  slidesPerView:  1,
   slidesPerGroup: 1,
   mousewhell: true,
   keyboard: true,
+  spaceBetween: 50,
+  breakpoints: {
+    765: {
+      //  spaceBetween: 50,
+       slidesPerView: 2,
+       spaceBetween: 100,
+    }
+  },
 });

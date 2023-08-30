@@ -1,4 +1,8 @@
+// ipad -v
 @media screen and (width < 1140px) {
+  h3 {
+    font-size: 45px !important;
+  }
   header {
     .logo {
       border-right: none !important;
@@ -6,27 +10,136 @@
     nav,
     .media {
       display: none !important;
-      background-color: red;
     }
-    .mobile_burger{
-        display: inline-block!important;
-      }
+    .mobile_burger {
+      display: inline-block !important;
+    }
   }
-  .speakers {
+  main {
+    .conference {
+      padding: 83px 70px;
 
-    .swiper {
-        height: 445px!important;
+      .logo {
+        width: 30%;
+      }
+      .img_text {
+        width: 66%;
+      }
+      p {
+        width: 80%;
+      }
+    }
+    .speakers {
+      padding: 20px 70px;
 
-      .swiper-button-prev,
-      .swiper-button-next {
-        display: none !important;
+      .swiper {
+        height: 445px;
+        h3 {
+          padding-left: 14px;
+        }
+        .swiper-slide {
+          padding: 0 !important;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          display: none !important;
+        }
       }
-      .swiper_img {
-        width: 280px !important;
+    }
+    .form {
+      padding: 100px 70px 390px;
+    }
+  }
+}
+
+@media screen and (767px < width < 1140px) {
+  .swiper_img {
+    width: 280px !important;
+  }
+  .wrapper {
+    top: 39% !important;
+  }
+}
+@media screen and (width < 767px) {
+  .swiper {
+    height: 535px !important;
+  }
+  .wrapper {
+    top: 50.2% !important;
+  }
+}
+// iphone -v
+@media screen and (width < 500px) {
+  h3 {
+    font-size: 40px !important;
+  }
+
+  main {
+    button {
+      letter-spacing: 4.2px !important;
+    }
+
+    .conference {
+      padding: 60px 20px 130px;
+
+      .logo {
+        width: calc(100% - 40px);
+        left: 20px;
+        top: 465px;
       }
-      .wrapper{
-        top: 39%!important;
+      .img_text {
+        width: 105vw;
+        padding-left: 60px;
       }
+      button{
+        padding: 26px 0 25px!important;
+        width: 100%;
+      }
+      p {
+        width: 100%;
+      }
+      p:nth-of-type(1) {
+        margin-top: 480px;
+      }
+    }
+    .speakers {
+      padding: 20px 20px 45px;
+
+      .swiper {
+        // height: 535px !important;
+        h3 {
+          padding-left: 0;
+        }
+        .swiper_img {
+          // width: 300px + 20px!important;
+        }
+      }
+    }
+    .form {
+      padding: 75px 20px 112px;
+
+      .nameAndEmail {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          width: 100% !important;
+        }
+        input:nth-of-type(1) {
+          margin-bottom: 30px;
+        }
+      }
+      .btn {
+        text-align: center !important;
+        margin-top: 130px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  footer {
+    a {
+      font-size: 28px !important;
     }
   }
 }
