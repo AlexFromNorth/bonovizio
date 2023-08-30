@@ -38,14 +38,14 @@
 
 <br />
 <br />
-<img src="src/images/main.png" alt="demo auth">
+<img src="dist_readme/main.png" alt="demo auth">
 <br />
 <br />
-<img src="src/images/swiper.png" alt="demo news" >
+<img src="dist_readme/swiper.png" alt="demo news" >
 <br />
 <br />
-<img src="src/images/mobile.png" alt="demo messages" >
+<img src="dist_readme/mobile.png" alt="demo messages" >
 <br />
 <br />
-<img src="src/images/form.png" alt="demo friends">
+<img src="dist_readme/form.png" alt="demo friends">
 
