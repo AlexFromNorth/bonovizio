@@ -12,6 +12,7 @@ body {
   line-height: normal;
   font-size: 18px;
   color: $conference_background;
+  cursor: default;
 }
 html {
   scroll-behavior: smooth;
@@ -19,10 +20,18 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer!important;
 }
 button {
   background-color: inherit;
   border: none;
+  cursor: pointer!important;
+}
+a svg{
+  cursor: pointer!important;
+}
+input, textarea{
+  cursor: text;
 }
 
 .header {
@@ -41,6 +50,7 @@ button {
     font-size: 29px;
     line-height: 42px;
     z-index: 12;
+    cursor: def;
   }
   nav {
     margin-top: 6px;
@@ -130,6 +140,8 @@ main {
           justify-content: center;
 
           .swiper_img {
+            cursor: pointer;
+
             background-image: url("../../../public/images/slider_img.jpg");
             background-repeat: no-repeat;
             background-size: contain;
@@ -191,7 +203,7 @@ main {
       textarea.invalid {
         border-color: red;
       }
-      
+
       h3 {
         margin-bottom: 62px;
         color: $text-white;
