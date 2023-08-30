@@ -22,7 +22,7 @@
 
 1. Склонировать репозиторий в текущую папку:
 
-```git clone https://github.com/AlexFromNorth/bonovizio ./```
+```git clone https://github.com/AlexFromNorth/bonovizio ```
 
 2. Установить зависимости:
 
