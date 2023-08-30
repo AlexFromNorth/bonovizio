@@ -15,7 +15,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  }
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -40,6 +40,7 @@ button {
     border-right: 1px solid $header_grey;
     font-size: 29px;
     line-height: 42px;
+    z-index: 12;
   }
   nav {
     margin-top: 6px;
@@ -61,7 +62,7 @@ button {
       margin-right: 13px;
     }
   }
-  .mobile_burger{
+  .hamburger-menu {
     display: none;
   }
 }
@@ -180,11 +181,17 @@ main {
   }
 
   // form
+
   .form {
     background-color: $conference_background;
     padding: 140px 220px 160px;
 
     form {
+      input.invalid,
+      textarea.invalid {
+        border-color: red;
+      }
+      
       h3 {
         margin-bottom: 62px;
         color: $text-white;

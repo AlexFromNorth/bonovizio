@@ -6,12 +6,13 @@
   header {
     .logo {
       border-right: none !important;
+      margin: 0 0 5px 20px !important;
     }
     nav,
     .media {
       display: none !important;
     }
-    .mobile_burger {
+    .hamburger-menu {
       display: inline-block !important;
     }
   }
@@ -47,7 +48,7 @@
       }
     }
     .form {
-      padding: 100px 70px 390px;
+      padding: 100px 70px 130px;
     }
   }
 }
@@ -59,6 +60,9 @@
   .wrapper {
     top: 39% !important;
   }
+  .menu__item {
+    font-size: 32px !important;
+  }
 }
 @media screen and (width < 767px) {
   .swiper {
@@ -67,6 +71,12 @@
   .wrapper {
     top: 50.2% !important;
   }
+  .menu__item {
+    font-size: 20px !important;
+  }
+//   .form {
+//     padding: 75px 20px 112px;
+//   }
 }
 // iphone -v
 @media screen and (width < 500px) {
@@ -91,8 +101,8 @@
         width: 105vw;
         padding-left: 60px;
       }
-      button{
-        padding: 26px 0 25px!important;
+      button {
+        padding: 26px 0 25px !important;
         width: 100%;
       }
       p {
@@ -100,6 +110,9 @@
       }
       p:nth-of-type(1) {
         margin-top: 480px;
+      }
+      .anchor{
+        display: none;
       }
     }
     .speakers {
@@ -116,7 +129,7 @@
       }
     }
     .form {
-      padding: 75px 20px 112px;
+        padding: 75px 20px 112px;
 
       .nameAndEmail {
         display: flex;
